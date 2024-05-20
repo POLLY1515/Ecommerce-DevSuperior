@@ -1,0 +1,13 @@
+# Configurações do DataSource para testes
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=
+
+# Habilita o console web do H2 para facilitar o acesso ao banco de dados durante os testes (opcional)
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2-console
+
+# Log SQL statements (opcional, útil para depuração durante testes)
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
